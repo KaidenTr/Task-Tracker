@@ -1,0 +1,43 @@
+﻿<Window x:Class="TeamNorthStar_TaskTrackerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task Tracker" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Task Input Section -->
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0">
+            <TextBox Name="TitleInput" Width="150"
+                     GotFocus="ClearPlaceholder" LostFocus="SetPlaceholder">
+                Enter task title...
+            </TextBox>
+            <TextBox Name="DescriptionInput" Width="250"
+                     GotFocus="ClearPlaceholder" LostFocus="SetPlaceholder">
+                Enter task description...
+            </TextBox>
+            <DatePicker Name="DueDatePicker" Width="150"/>
+            <ComboBox Name="StatusDropdown" Width="150">
+                <ComboBoxItem Content="NotStarted" IsSelected="True"/>
+                <ComboBoxItem Content="InProgress"/>
+                <ComboBoxItem Content="Completed"/>
+            </ComboBox>
+            <Button Content="Add Task" Click="OnAddTaskButtonClick"/>
+        </StackPanel>
+
+        <!-- Task List Section -->
+        <ListView ItemsSource="{Binding Tasks}" Grid.Row="1" Margin="10"
+                  SelectedItem="{Binding SelectedTask}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}"/>
+                    <GridViewColumn Header="Due Date" DisplayMemberBinding="{Binding DueDate}"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

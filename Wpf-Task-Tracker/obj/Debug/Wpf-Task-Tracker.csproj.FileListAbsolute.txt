@@ -1,0 +1,14 @@
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\bin\Debug\Wpf-Task-Tracker.exe.config
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\bin\Debug\Wpf-Task-Tracker.exe
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\bin\Debug\Wpf-Task-Tracker.pdb
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.csproj.AssemblyReference.cache
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\MainWindow.g.cs
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\App.g.cs
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker_MarkupCompile.cache
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\MainWindow.baml
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.g.resources
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf_Task_Tracker.Properties.Resources.resources
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.csproj.GenerateResource.cache
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.csproj.CoreCompileInputs.cache
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.exe
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.pdb

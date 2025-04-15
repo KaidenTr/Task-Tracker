@@ -60,6 +60,7 @@
             </TabItem>
         </TabControl>
         </StackPanel>
+        <Button x:Name="TaskStatusButtonClick" Content="Change Status" HorizontalAlignment="Left" Height="20" Margin="685,360,0,0" Grid.Row="1" VerticalAlignment="Top" Width="91"/>
     </Grid>
 </Window>
 

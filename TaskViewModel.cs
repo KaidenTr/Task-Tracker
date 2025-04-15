@@ -56,7 +56,30 @@ namespace TeamNorthStar_TaskTrackerApp.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+    
+    private void TaskStatusButtonClick(object sender, RoutedEventArgs e)
+    {
+        // script for previous button next I'll add the function 
+        CycleTaskStatus();
     }
+    public void CycleTaskStatus()
+    {
+        if (SelectedTask != null)
+        {
+            // Get the next status in the enum by cycling through the statuses
+            var values = Enum.GetValues(typeof(TaskStatus)).Cast<TaskStatus>().ToList();
+            int currentIndex = values.IndexOf(SelectedTask.Status);
+            int nextIndex = (currentIndex + 1) % values.Count;
+
+            // Update the status of the selected task
+            SelectedTask.Status = values[nextIndex];
+
+            // Notify the UI to update the ListView
+            OnPropertyChanged(nameof(Tasks));
+        }
+    }
+}
+}
 }
 
 

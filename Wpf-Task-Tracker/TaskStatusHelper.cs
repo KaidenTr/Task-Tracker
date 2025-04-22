@@ -10,3 +10,4 @@ namespace TeamNorthStar_TaskTrackerApp.Models
         public static IEnumerable<TaskStatus> Values => Enum.GetValues(typeof(TaskStatus)).Cast<TaskStatus>();
     }
 }
+

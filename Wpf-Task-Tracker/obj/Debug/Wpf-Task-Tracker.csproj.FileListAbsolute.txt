@@ -12,5 +12,7 @@ F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.csproj.CoreCompileInputs.cache
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.exe
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.pdb
-F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker_MarkupCompile.lref
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\bin\Debug\Newtonsoft.Json.dll
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\bin\Debug\Newtonsoft.Json.xml
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task.AE06389A.Up2Date

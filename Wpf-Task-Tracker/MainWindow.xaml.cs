@@ -2,6 +2,7 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using Microsoft.Win32; // For file dialogs
 using TeamNorthStar_TaskTrackerApp.Models;
 using TeamNorthStar_TaskTrackerApp.ViewModels;
 
@@ -18,6 +19,7 @@ namespace TeamNorthStar_TaskTrackerApp
             DataContext = ViewModel;
         }
 
+        // Handle Add Task Button Click
         private void OnAddTaskButtonClick(object sender, RoutedEventArgs e)
         {
             string title = TitleInput.Text;
@@ -33,8 +35,11 @@ namespace TeamNorthStar_TaskTrackerApp
                 };
                 ViewModel.AddTask(task);
 
+                // Reset input fields
                 TitleInput.Text = "Enter task title...";
                 DescriptionInput.Text = "Enter task description...";
+                TitleInput.Foreground = System.Windows.Media.Brushes.Gray;
+                DescriptionInput.Foreground = System.Windows.Media.Brushes.Gray;
             }
             else
             {
@@ -42,6 +47,7 @@ namespace TeamNorthStar_TaskTrackerApp
             }
         }
 
+        // Placeholder clear when focused
         private void ClearPlaceholder(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;
@@ -52,20 +58,26 @@ namespace TeamNorthStar_TaskTrackerApp
             }
         }
 
+        // Placeholder set when unfocused
         private void SetPlaceholder(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
                 if (textBox.Name == "TitleInput")
+                {
                     textBox.Text = "Enter task title...";
+                    textBox.Foreground = System.Windows.Media.Brushes.Gray;
+                }
                 else if (textBox.Name == "DescriptionInput")
+                {
                     textBox.Text = "Enter task description...";
-
-                textBox.Foreground = System.Windows.Media.Brushes.Gray;
+                    textBox.Foreground = System.Windows.Media.Brushes.Gray;
+                }
             }
         }
 
+        // Handle status change in the ListView
         private void OnStatusChanged(object sender, SelectionChangedEventArgs e)
         {
             if (sender is ComboBox comboBox && comboBox.DataContext is Task task)
@@ -73,10 +85,45 @@ namespace TeamNorthStar_TaskTrackerApp
                 TaskStatus newStatus = (TaskStatus)comboBox.SelectedItem;
                 task.Status = newStatus;
 
+                // Notify ViewModel about the change
                 ViewModel.UpdateTaskStatus(task, newStatus);
+            }
+        }
+
+        // Handle Export Button Click
+        private void OnExportButtonClick(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "JSON Files (*.json)|*.json",
+                DefaultExt = "json",
+                FileName = "Tasks.json"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                ViewModel.ExportTasks(saveFileDialog.FileName);
+                MessageBox.Show("Tasks exported successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        // Handle Import Button Click
+        private void OnImportButtonClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "JSON Files (*.json)|*.json",
+                DefaultExt = "json"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                ViewModel.ImportTasks(openFileDialog.FileName);
+                MessageBox.Show("Tasks imported successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }
 }
+
 
 

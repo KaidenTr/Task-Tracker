@@ -1,0 +1,18 @@
+[
+  {
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask",
+    "Title": "Buy Groceries",
+    "Description": "Purchase vegetables, fruits, and milk from the local store",
+    "DueDate": "2025-04-23T10:00:00",
+    "Status": "NotStarted",
+    "Priority": "High"
+  },
+  {
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.WorkTask",
+    "Title": "Prepare Presentation",
+    "Description": "Finalize slides and rehearse presentation for team meeting",
+    "DueDate": "2025-04-24T14:00:00",
+    "Status": "InProgress",
+    "AssignedTo": "Team Leader"
+  }
+]

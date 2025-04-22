@@ -26,6 +26,8 @@
                 <ComboBoxItem Content="Completed"/>
             </ComboBox>
             <Button Content="Add Task" Click="OnAddTaskButtonClick"/>
+            <Button Content="Export Tasks" Click="OnExportButtonClick" Margin="5"/>
+            <Button Content="Import Tasks" Click="OnImportButtonClick" Margin="5"/>
         </StackPanel>
 
         <!-- Task List Section -->
@@ -49,3 +51,4 @@
         </ListView>
     </Grid>
 </Window>
+

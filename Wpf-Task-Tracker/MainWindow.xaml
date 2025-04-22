@@ -4,6 +4,12 @@
         xmlns:local="clr-namespace:TeamNorthStar_TaskTrackerApp.Models"
         Title="Task Tracker" Height="450" Width="800">
     <Grid>
+<Grid.Background>
+    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="Black"/>
+        <GradientStop Color="DeepSkyBlue" Offset="1"/>
+    </LinearGradientBrush>
+</Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -32,6 +38,12 @@
 
         <!-- Task List Section -->
         <ListView ItemsSource="{Binding Tasks}" Grid.Row="1" Margin="10">
+            <ListView.Background>
+    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="LightGray"/>
+        <GradientStop Color="#FFFF5050" Offset="1"/>
+    </LinearGradientBrush>
+</ListView.Background>
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />

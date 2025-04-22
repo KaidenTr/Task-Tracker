@@ -65,6 +65,18 @@ namespace TeamNorthStar_TaskTrackerApp
                 textBox.Foreground = System.Windows.Media.Brushes.Gray;
             }
         }
+
+        private void OnStatusChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox comboBox && comboBox.DataContext is Task task)
+            {
+                TaskStatus newStatus = (TaskStatus)comboBox.SelectedItem;
+                task.Status = newStatus;
+
+                ViewModel.UpdateTaskStatus(task, newStatus);
+            }
+        }
     }
 }
+
 

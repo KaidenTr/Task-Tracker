@@ -62,5 +62,3 @@ namespace TeamNorthStar_TaskTrackerApp.Models
         }
     }
 }
-
-

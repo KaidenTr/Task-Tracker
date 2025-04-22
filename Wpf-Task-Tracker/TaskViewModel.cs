@@ -35,7 +35,7 @@ namespace TeamNorthStar_TaskTrackerApp.ViewModels
         public void UpdateTaskStatus(Task task, TaskStatus newStatus)
         {
             task.Status = newStatus;
-            OnPropertyChanged(nameof(Tasks));
+            OnPropertyChanged(nameof(Tasks)); // Notify UI to refresh the task list
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -45,4 +45,5 @@ namespace TeamNorthStar_TaskTrackerApp.ViewModels
         }
     }
 }
+
 

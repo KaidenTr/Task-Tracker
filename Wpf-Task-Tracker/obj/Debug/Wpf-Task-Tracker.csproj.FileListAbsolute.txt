@@ -12,3 +12,5 @@ F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.csproj.CoreCompileInputs.cache
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.exe
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker.pdb
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\Wpf-Task-Tracker_MarkupCompile.lref

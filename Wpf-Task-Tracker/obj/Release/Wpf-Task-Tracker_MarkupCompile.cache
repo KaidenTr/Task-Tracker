@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Debug\
+F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\obj\Release\
 Wpf_Task_Tracker
 none
 false
-DEBUG;TRACE
+TRACE
 F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ F:\Class pratice\C#\Wpf-Task-Tracker\Wpf-Task-Tracker\App.xaml
 13-1310406943
 MainWindow.xaml;
 
-False
+True
 

@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Wpf_Task_Tracker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

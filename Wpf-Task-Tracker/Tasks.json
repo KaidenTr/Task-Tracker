@@ -1,18 +1,42 @@
 [
   {
-    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask",
-    "Title": "Buy Groceries",
-    "Description": "Purchase vegetables, fruits, and milk from the local store",
-    "DueDate": "2025-04-23T10:00:00",
-    "Status": "NotStarted",
-    "Priority": "High"
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask, Wpf-Task-Tracker",
+    "Priority": "Medium",
+    "Title": "Prepare Presentation",
+    "Description": "Finalize slides and rehearse presentation",
+    "DueDate": "2025-04-24T00:00:00",
+    "Status": 2
   },
   {
-    "$type": "TeamNorthStar_TaskTrackerApp.Models.WorkTask",
-    "Title": "Prepare Presentation",
-    "Description": "Finalize slides and rehearse presentation for team meeting",
-    "DueDate": "2025-04-24T14:00:00",
-    "Status": "InProgress",
-    "AssignedTo": "Team Leader"
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask, Wpf-Task-Tracker",
+    "Priority": "Medium",
+    "Title": "Buy Groceries",
+    "Description": "Purchase vegetables, fruits, and milk from the local store",
+    "DueDate": "2025-04-25T00:00:00",
+    "Status": 0
+  },
+  {
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask, Wpf-Task-Tracker",
+    "Priority": "Medium",
+    "Title": "Submit Finals Projects",
+    "Description": "Upload projects into canvas ",
+    "DueDate": "2025-04-25T00:00:00",
+    "Status": 1
+  },
+  {
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask, Wpf-Task-Tracker",
+    "Priority": "Medium",
+    "Title": "Plan a Movie Night",
+    "Description": "Select a movie, prepare snacks, and invite friends for an evening of fun",
+    "DueDate": "2025-04-26T00:00:00",
+    "Status": 0
+  },
+  {
+    "$type": "TeamNorthStar_TaskTrackerApp.Models.PersonalTask, Wpf-Task-Tracker",
+    "Priority": "Medium",
+    "Title": "Do Laundry",
+    "Description": "Wash clothes, dry them, and fold them neatly into the drawers",
+    "DueDate": "2025-04-27T00:00:00",
+    "Status": 0
   }
 ]
